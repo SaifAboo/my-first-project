@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urban Locker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">URBAN LOCKER</div>
+  <button id="cartButton">
+    السلة <span id="cartCount">0</span>
+  </button>
+</header>
+
+<section class="hero">
+  <div>
+    <p>أحدث المنتجات المختارة</p>
+    <h1>ستايلك يبدأ من هنا</h1>
+    <a href="#products">تسوق الآن</a>
+  </div>
+</section>
+
+<section class="tools">
+  <input id="searchInput" type="search" placeholder="ابحث عن منتج...">
+
+  <select id="categoryFilter">
+    <option value="all">كل المنتجات</option>
+    <option value="shoes">أحذية</option>
+    <option value="clothes">ملابس</option>
+    <option value="accessories">إكسسوارات</option>
+  </select>
+</section>
+
+<main id="products" class="products"></main>
+
+<div id="cartPanel" class="cart-panel">
+  <button id="closeCart" class="close">×</button>
+  <h2>سلة المشتريات</h2>
+  <div id="cartItems"></div>
+  <h3>المجموع: <span id="cartTotal">0</span> $</h3>
+  <button id="orderButton" class="order-button">
+    إتمام الطلب عبر WhatsApp
+  </button>
+</div>
+
+<div id="overlay"></div>
+
+<footer>
+  <p>© 2026 Urban Locker - جميع الحقوق محفوظة</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
